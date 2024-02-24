@@ -1,9 +1,10 @@
+Reading pref.tcl
+
+# 10.6c
+
 # vsim -c work.top -do "run -a" 
-# Start time: 19:19:30 on Feb 24,2024
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: sudokoSolver.sv(96): (vopt-2244) Variable 'unsolved' is implicitly static. You must either explicitly declare it as static or automatic
-# or remove the initialization in the declaration of variable.
-# ** Warning: sudokoSolver.sv(99): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# Start time: 19:25:23 on Feb 24,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -42,5 +43,5 @@
 # '{5, 1, 9, 3, 2, 6, 8, 7, 4}
 # '{2, 4, 8, 9, 5, 7, 1, 3, 6}
 # '{7, 6, 3, 4, 1, 8, 2, 5, 9}
-# End time: 19:20:14 on Feb 24,2024, Elapsed time: 0:00:44
-# Errors: 0, Warnings: 2
+VSIM 2> > VSIM 2> > VSIM 2> > VSIM 2> > VSIM 2> > VSIM 2> # End time: 19:25:37 on Feb 24,2024, Elapsed time: 0:00:14
+# Errors: 0, Warnings: 0
