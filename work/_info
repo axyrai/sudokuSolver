@@ -1,0 +1,77 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/hwetools/work_area/frontend/AkshayRai/tasks/Feb23/sudokoSolver
+T_opt
+!s110 1708782571
+V<I6bN`AgASFcUSB5LzNeg2
+Z1 04 3 4 work top fast 0
+=1-a4badb503ddd-65d9f3ea-f1c1c-13d0
+Z2 o-quiet -auto_acc_if_foreign -work work
+Z3 tCvgOpt 0
+n@_opt
+Z4 OE;O;10.6c;65
+T_opt1
+!s110 1708689387
+Vfja6WA7>PB;=X4aG>CaK^3
+R1
+=1-a4badb503ddd-65d887eb-8d7a4-f84
+R2
+R3
+n@_opt1
+R4
+R0
+XsudokoSolver_sv_unit
+Z5 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+V3foU=Wf0;9kYN1km3Q]E82
+r1
+!s85 0
+31
+!i10b 1
+!s100 ambL]]f3GdaI<gc<2P:iT3
+I3foU=Wf0;9kYN1km3Q]E82
+!i103 1
+S1
+R0
+Z6 w1708782538
+Z7 8sudokoSolver.sv
+Z8 FsudokoSolver.sv
+L0 2
+Z9 OE;L;10.6c;65
+Z10 !s108 1708782542.000000
+Z11 !s107 sudokoSolver.sv|
+Z12 !s90 sudokoSolver.sv|
+!i113 0
+Z13 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+nsudoko@solver_sv_unit
+vtop
+R5
+DXx4 work 20 sudokoSolver_sv_unit 0 22 3foU=Wf0;9kYN1km3Q]E82
+VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 2EP5h94=>8eUSINfRzcNn1
+IQ>CV>L2m7=[cEPOPOi?_42
+!s105 sudokoSolver_sv_unit
+S1
+R0
+R6
+R7
+R8
+L0 91
+R9
+R10
+R11
+R12
+!i113 0
+R13
+R3
