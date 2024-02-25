@@ -1,4 +1,3 @@
-
 typedef bit[3:0] puzzle[9][9];
 
 class sudokoSolver;
