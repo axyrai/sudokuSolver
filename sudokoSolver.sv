@@ -8,12 +8,13 @@ class sudokoSolver;
   function new(puzzle unsolved);
     this.unsolved = unsolved;
   endfunction
+
   constraint numberLimit_c
   {
     foreach(solved[i,j])
     {
-      solved[i][j] >0;
-      solved[i][j] <10;
+      solved[i][j] > 0;
+      solved[i][j] < 10;
     }
     
   }
@@ -22,8 +23,8 @@ class sudokoSolver;
   {
     foreach(unsolved[i,j])
     {
-      if(unsolved[i][j]!=0)
-        solved[i][j]==unsolved[i][j];
+      if(unsolved[i][j] != 0)
+        solved[i][j] == unsolved[i][j];
     }
   }
       
@@ -33,7 +34,7 @@ class sudokoSolver;
     {
       foreach(solved[anotherRow,])
       {
-        if(row!=anotherRow)
+        if(row != anotherRow)
         {
           solved[row][col] != solved[anotherRow][col]; 
         }
@@ -48,7 +49,7 @@ class sudokoSolver;
     {
       foreach(solved[,anotherCol])
       {
-        if(col!=anotherCol)
+        if(col != anotherCol)
         {
           solved[row][col] != solved[row][anotherCol]; 
         }
@@ -62,11 +63,10 @@ class sudokoSolver;
     {
       foreach(solved[anotherRow,anotherCol])
       {
-        if(row/3==anotherRow/3 && col/3==anotherCol/3 && !(row==anotherRow && col==anotherCol))
+        if(row/3 == anotherRow/3 && col/3 == anotherCol/3 && !(row == anotherRow && col == anotherCol))
         {
-          solved[row][col]!=solved[anotherRow][anotherCol];
+          solved[row][col] != solved[anotherRow][anotherCol];
         }
-                          
       }
     }
   }
@@ -90,15 +90,12 @@ endclass
 
 module top;
   sudokoSolver sudoko;
-  
   initial
     begin
       puzzle unsolved = '{'{0,0,0,2,6,0,7,0,1},'{6,8,0,0,7,0,0,9,0},'{1,9,0,0,0,4,5,0,0},'{8,2,0,1,0,0,0,4,0},'{0,0,4,6,0,2,9,0,0},'{0,5,0,0,0,3,0,2,8},'{0,0,9,3,0,0,0,7,4},'{0,4,0,0,5,0,0,3,6},'{7,0,3,0,1,8,0,0,0}};
-  
       sudoko=new(unsolved);
       sudoko.randomize();
       sudoko.displayBeforeSolving();
       sudoko.displayAfterSolving();
-      
     end
 endmodule
